@@ -1,0 +1,19 @@
+{
+  "name": "server-core",
+  "version": "0.9.3",
+  "description": "",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "mongoose": "^5.2.9",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.18.3"
+  }
+}

@@ -1,0 +1,7 @@
+// DB Connection DATA (Подключение к вашей базеданных)
+module.exports = {
+  pass: 'dbpassword',
+  user: 'dbuser',
+  uri: 'DBURL:PORT',
+  name: 'dbname'
+}
