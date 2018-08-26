@@ -27,3 +27,5 @@ cd core/npm run dev
 > Reconfigure some api
 
 > WEB Forms
+
+> reflinks for some variables
