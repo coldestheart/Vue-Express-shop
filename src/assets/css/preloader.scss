@@ -1,0 +1,136 @@
+
+  img {
+    width: 4.5em;
+    height: 4em;
+    top: 227px;
+    left: calc(50% - 2em);
+    position: absolute;
+    pointer-events: none;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-animation: logotype-data-v-5b0ee396 3.5s ease infinite;
+    animation: logotype-data-v-5b0ee396 3.5s ease infinite;
+
+}
+
+logo {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.intro {
+  color: #fff !important;
+  position: fixed;
+  z-index: 99999999;
+  overflow: hidden;
+  top: 0;
+  height: 100vh;
+  opacity: 1;
+  transition: transform 0.4s ease-in-out, opacity 0.3s ease;
+  transform: scale(1);
+  transform-origin: center;
+}
+.logolabel {
+  position: absolute;
+  bottom: 10%;
+}
+.hidden {
+  pointer-events: none;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out, opacity 0.3s ease;
+  transform: scale(0);
+  opacity:0;
+  transform-origin: center;
+}
+.noscroll {
+  overflow: hidden;
+}
+.body {
+  background: radial-gradient(ellipse at center, #015871 0%, #2b5876 35%, #385176 100%);
+  overflow: hidden;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  bottom:0px;
+  left: 0px;
+  position:absolute;
+}
+.ocean {
+  height: 25%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #015871;
+}
+.anime {
+  width: 100%;
+  position: absolute;
+  transform: scale(0.4);
+}
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+@keyframes logotype {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1);
+  }
+}
+/*ЗДЕСЬ ДАЛЬШЕ*/
+
+@media only screen and (max-width: 767px) {
+  svg {
+    width: 100%;
+  }
+  logo {
+    top: -10%;
+  }
+  .ocean {
+    height: 0%;
+  }
+}
